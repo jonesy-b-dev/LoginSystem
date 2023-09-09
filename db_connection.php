@@ -1,4 +1,6 @@
 <?php
+require 'loginSystem.php';
+//Connection information
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -9,19 +11,18 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
 if ($conn) {
-  echo "Connected successfully";
+  echo "Connected successfully \n";
 }
 else {
-  echo "Connection failed: ";
+  echo "Connection failed. \n";
 }
-
-//check if the field with id uName and uPass is set and not empty, print out succes if true, else print out failure
-
 
 if(isset($_POST['uName']) && !empty($_POST['uName']) && isset($_POST['uPass']) && !empty($_POST['uPass'])) {
-  echo "Success!";
+  echo "Fields are filled in! \n";
+  SaveLoginDetails();
+  Login($conn);
 } 
 else {
-  echo "Failure!";
+  echo "Failure! \n";
 }
 ?>
