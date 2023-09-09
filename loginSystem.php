@@ -19,6 +19,5 @@ function Login($conn) {
     else {
         echo "Login failed \n";
     }
-  
 }
 ?>
