@@ -1,5 +1,5 @@
 body{
-    background-color: #333333;
+    background-color: #262a2b;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -14,7 +14,7 @@ body{
 
 .box{
     border-radius: 15px;
-    background-color: #bbbbbb;
+    background-color: #3f4446;
     margin-left: 30%;
     margin-right: 30%;
     margin-top: 10%;
@@ -28,6 +28,8 @@ body{
 }
 
 .inputField{
+    background-color: #3b3b3b;
+    color: #76736e;
     border-radius: 5px;
     border: none;
     padding: 10px;
